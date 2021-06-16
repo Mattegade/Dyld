@@ -205,3 +205,58 @@
     
     }
     /* nav ends here*/
+
+}
+.main 
+{
+max-width: 1200;
+margin: auto;
+}
+
+.section 
+{
+position: sticky;
+}
+
+h1 
+{
+font-size: 50px;
+word-break: break-all;
+}
+
+h2 
+{
+font-size: 30px;
+line-height: 36px;
+font-weight: 300;
+text-align: center;
+letter-spacing: 3px;
+}
+
+.row 
+{
+margin: 10 0 10 0;
+}
+
+/* Padding BETWEEN each column */
+.row,
+.row > .column 
+{
+padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column 
+{
+float: left;
+width: 33%;
+height: 480px;
+}
+
+/* Clear floats after rows */
+.row:after 
+{
+content: "";
+display: table;
+clear: both;
+}
