@@ -274,7 +274,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
-padding: 20px;
+padding: 20 10 20 10;
 }
 
 
@@ -308,3 +308,141 @@ a {
     text-decoration: none;
     line-height: 20px;
 } 
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 900px) 
+{
+.column 
+{
+width: 50%;
+height: 460px;
+}
+
+.center 
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+padding: 15 10 15 10;
+}
+
+p 
+{
+font-size: 16;
+letter-spacing: 1px;
+line-height: 20px;
+}
+
+h2 
+{
+font-size: 24px;
+line-height: 0%;
+font-weight: 300;
+text-align: center;
+letter-spacing: 2px;
+}
+
+h3 
+{
+font-size: 18px;
+font-weight: 300;
+line-height: 120%;
+text-align: center;
+letter-spacing: 3px;
+}
+
+.section 
+{
+margin: 0 150 0 150;
+padding: 20px;
+}
+
+.footer 
+    {
+    width: 100%;
+    height: 260px;
+    color: white;
+    background-color:rgb(126, 1, 1);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20 65 200 65;
+    text-align: center;
+    }
+    address { 
+      display: block;
+      font-style: inherit;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 20px;
+    }
+  
+      
+    a {
+        color: white;
+        text-decoration: none;
+        line-height: 20px;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+  .column 
+  {
+  width: 100%;
+  height: 430px;
+  padding: 0 20 0 0;
+  
+  }
+
+.center 
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+padding: 10 0 10 0;
+}
+
+.content 
+{
+display: block;
+margin-bottom: 100px;
+}
+
+.section 
+{
+margin: 0 0 0 0;
+padding: 20px;
+}
+
+
+.footer 
+{
+width: 100%;
+height: 420px;
+color: white;
+background-color:rgb(126, 1, 1);
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto;
+padding: 20 15 50 15;
+text-align: center;
+}
+address { 
+  display: block;
+  font-style: inherit;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+  
+a {
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+}
