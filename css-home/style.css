@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body 
+  {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    align-content: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    }
+  h2 
+  {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+    
+  h3 
+  {
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  
