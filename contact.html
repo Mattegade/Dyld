@@ -12,70 +12,84 @@
     <div id="container">
       <header id="header">
 
-        <nav class="navbar">
-          <div class="navbar__container">
-
-              <div class="navbar__toggle" id="mobile-menu">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </div>
-              <ul class="navbar__menu">
-                  <li class="navbar__item">
-                      <a href="index.html" class="navbar__links" id="wineries-page">Wineries</a>
-                  </li>
-                  <li class="navbar__item">
-                      <a href="wines.html" class="navbar__links" id="wines-page">Wines</a>
-                  </li>
-                  <li class="navbar__item">
-                      <a href="contact.html" class="navbar__links" id="contact-page">Contact</a>
-                  </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div id="main">
-            <img src="images/Dyld-logo.png" alt="Fine wines" width="50%" class="center">
-        </div>
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+  
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+  
+            -->
+            <ul id="menu">
+              <a href="home.html" ><li>Wineries</li></a>
+              <a href="wines.html"><li>Wines</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+              <a href="#sign-up"><li>Sign up</li></a>
               
+              
+            </ul>
+          </div>
+        </nav>
       
-      
-        <hr> 
-        
-          <h1>LET´S HAVE A TOAST!</h1>
-      
-          <hr> 
 
-          <div>
-            <img src="images/small-dog.jpg" alt="Howling dog" style="width:100%">
-          </div>
-          <div><h2>Contact us!<r> Drop us a line or give us a call!</h2>
-            <address>
-              Email: <a href="mailto:mats.gadestam@gmail.com">doyoulikedogs@gmail.com</a><br>or call 0709-108785<br><br>
-   
-            </address>
-          </div>
+      
+  <div id="main">
+      <img src="images/Dyld-logo.png" alt="Fine wines" width="50%" class="center">
+  </div>
         
+
+
+  <hr> 
+  <br>
+    <h2>LET´S HAVE A TOAST!</h2>
+    <br>
+
   
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+
+      <div class="column">
+        <div class="content">
+          <img src="images/small-dog.jpg" alt="Howling dog" style="width:100%">
+          <h3>Contact us!</h3>
+          <h2>Drop us a line <br>or give us a call!</h2>
+          <address>
+            Email: <a href="mailto:mats.gadestam@gmail.com">doyoulikedogs@gmail.com</a><br>or call 0709-108785<br> <br><br><br><br><br><br>
+ 
+          </address>
         </div>
-        
+      </div>
+
       </div>
       
-  
-      
-      <!-- END MAIN -->
+    </div>
+    
+
+    
+    <!-- END MAIN -->
+    </div>
+    <!-- Site footer -->
+
+    <div class="footer">
+        <div class="footer-heading">
+          <p>"Do you like dogs" is the leading in selling British wines and one of the Sweden's most exciting drinks companies. We sell a world-class range of sparkling and still wines and beautiful gin and vodka & cider. Our sparkling wines are some of the best in World and all created from fruit grown in England. <br> <br>Do you like dogs • Västmannagatan 29 • Stockholm</p>
+
       </div>
-      <!-- Site footer -->
-  
-      <div class="footer">
-            
-  
-        <p>"Do you like dogs" is the leading in selling British wines and one of 
-          the Sweden's most exciting drinks companies. We sell a world-class range 
-          of sparkling and still wines and beautiful gin and vodka & cider. 
-          Our sparkling wines are some of the best in World and all created from fruit 
-          grown in England. <br> <br>Do you like dogs • Västmannagatan 29  Stockholm <br>
-  </p>
-            
-      
-      </div>
+          
+
+
+        <br></body>
+</html>

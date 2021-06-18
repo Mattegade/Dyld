@@ -12,25 +12,34 @@
     <div id="container">
       <header id="header">
 
-        <nav class="navbar">
-           <div class="navbar__container">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
 
-              <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-              </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links" id="wineries-page">Wineries</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="wines.html" class="navbar__links" id="wines.html">Wines</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links" id="contact-page">Contact</a>
-                    </li>
-                </ul>
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+
+            -->
+            <ul id="menu">
+              <a href="home.html" ><li>Wineries</li></a>
+              <a href="wines.html"><li>Wines</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+              <a href="#sign-up"><li>Sign up</li></a>
+              
+              
+            </ul>
           </div>
         </nav>
 

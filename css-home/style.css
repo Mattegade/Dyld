@@ -1,210 +1,276 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body 
-  {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
-    align-content: center;
-  }
-  
-  h1 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 3px;
-    }
-  h2 
-  {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-    
-  h3 
-  {
-    font-size: 24px;
-    font-weight: lighter;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  p {
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 20px;
-  }
-  
-  /* Center website */
-.navbar {
-    background: rgb(126, 1, 1);
-    height: 70px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999; 
-  }
-  
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-  
-  #navbar__logo{
-    background-color: gray;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
-  .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .navbar__item {
-    height: 80px;
-  }
-  
-  .navbar__links {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    text-decoration: none;
-    height: 100%;
-  }
-  
-  .navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-  }
-  
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: rgb(162, 161, 161);
-    color: white;
-  }
-  
-  .navbar__links:hover {
-    color: violet;
-  }
+  box-sizing: border-box;
+}
 
-  @media screen and (max-width: 960px) {
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-    
-    .navbar__menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        opacity: 1;
-        transition: ease-in-out;
-        top: -1000px;
-        z-index: -1;
-        background: blue;
-    }
-    
-    .navbar__menu.active {
-        background: blue;
-        top: 100%;
-        opacity: 1;
-        transition: ease-in-out;
-        z-index: 99;
-        height: 60vh;
-        font-size: 1.6rem;
-    }
-    
-    #navbar__logo {
-        padding-left: 25px;
-    }
-    
-    .navbar__toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: wheat;
-    }   
-    
-    .navbar__item {
-        width: 100%;
-    }
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-    .navbar__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }   
-    
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    
-    }
-    #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-    
-    }
-    .navbar__toggle .bar {
-    display: block;
-    cursor: pointer;
-    
-    }
-    /* nav ends here*/
+body 
+{
+  background-color:rgb(255, 255, 255);
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  align-content: center;
+}
+
+h1 {
+font-size: 50px;
+text-align: center;
+font-weight: lighter;
+}
+h2 
+{
+font-size: 30px;
+font-weight: 500;
+text-align: center;
+letter-spacing: 3px;
+}
+
+h3 
+{
+font-size: 24px;
+font-weight: lighter;
+text-align: center;
+letter-spacing: 3px;
+}
+p {
+font-size: 16px;
+letter-spacing: 1px;
+line-height: 20px;
+}
+
+
+/* Center website */
+#menuToggle
+{
+display: block;
+position: absolute;
+top: 60px;
+left: 30px;
+
+z-index: 1;
+
+-webkit-user-select: none;
+user-select: none;
+}
+
+#menuToggle a
+{
+text-decoration: none;
+color: #fafafa;
+
+transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+color: rgb(244, 182, 182);
+}
+
+
+#menuToggle input
+{
+display: block;
+width: 40px;
+height: 32px;
+position: absolute;
+top: -7px;
+left: -5px;
+
+cursor: pointer;
+
+opacity: 0; /* hide this */
+z-index: 2; /* and place it over the hamburger */
+
+-webkit-touch-callout: none;
+}
+
+/*
+* Just a quick hamburger
+*/
+#menuToggle span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+
+background: #cdcdcd;
+border-radius: 3px;
+
+z-index: 1;
+
+transform-origin: 4px 0px;
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+background: #ffffff;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* The last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu
+{
+position: absolute;
+width: 300px;
+margin: -100px 0 0 -50px;
+padding: 50px;
+padding-top: 125px;
+height: 100vh;
+background:rgb(126, 1, 1);
+list-style-type: none;
+-webkit-font-smoothing: antialiased;
+/* to stop flickering of text in safari */
+
+transform-origin: 0% 0%;
+transform: translate(-100%, 0);
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+padding: 10px 0;
+font-size: 22px;
+}
+
+/*
+* lide it in from the left
+*/
+#menuToggle input:checked ~ ul
+{
+transform: none;
+}
+
+
+@media screen and (max-width: 960px) {
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0;
+}
+
+.navbar__menu {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  transition: ease-in-out;
+  top: -1000px;
+  z-index: -1;
+  background: blue;
+}
+
+.navbar__menu.active {
+  background: blue;
+  top: 100%;
+  opacity: 1;
+  transition: ease-in-out;
+  z-index: 99;
+  height: 60vh;
+  font-size: 1.6rem;
+}
+
+#navbar__logo {
+  padding-left: 25px;
+}
+
+.navbar__toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: wheat;
+}   
+
+.navbar__item {
+  width: 100%;
+}
+.navbar__links {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+}
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  margin: 0;
+}   
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  margin: 0;
+
+}
+#mobile-menu {
+position: absolute;
+top: 20%;
+right: 5%;
+transform: translate(5%, 20%);
+
+}
+.navbar__toggle .bar {
+display: block;
+cursor: pointer;
+
+}
+/* nav ends here*/
+
+
+
 
 }
 .main 
@@ -238,12 +304,15 @@ letter-spacing: 3px;
 margin: 10 0 10 0;
 }
 
-/* Padding BETWEEN each column */
+
+
+/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column 
 {
 padding: 8px;
 }
+
 
 /* Create four equal columns that floats next to each other */
 .column 
@@ -261,9 +330,18 @@ display: table;
 clear: both;
 }
 
+
+/* Content 
+.content 
+{
+background-color: rgb(52, 42, 42);
+align-items: center;
+height: 200px;
+}*/
+
 .section 
 {
-margin: 0 250 0 250;
+margin: auto;
 padding: 0px;
 }
 
@@ -273,8 +351,8 @@ padding: 0px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 100%;
-padding: 20 10 20 10;
+width: 90%;
+padding: 20px;
 }
 
 
@@ -294,25 +372,67 @@ text-align: center;
 }
 
 address { 
-  display: block;
-  font-style: inherit;
-  text-align: center;
-  align-content: center;
-  letter-spacing: 1px;
-  line-height: 20px;
+display: block;
+font-style: inherit;
+text-align: center;
+align-content: center;
+letter-spacing: 1px;
+line-height: 20px;
 }
 
-  
-a {
-    color: white;
-    text-decoration: none;
-    line-height: 20px;
-} 
 
-/* Responsive layout - makes a two column-layout instead of three columns */
-@media screen and (max-width: 900px) 
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 20px;
+}   
+
+
+/*.footer-heading 
 {
-.column 
+display: flex;
+margin-right: 1rem;
+margin-bottom: 4rem;
+width: 100%;
+text-align: center;
+
+
+}*/
+/*.footer-heading a {
+color: white;
+text-decoration: none;
+margin-bottom: 1rem;
+justify-content: space-evenly;
+}
+*/
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  #menuToggle span
+  {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+
+  .column 
 {
 width: 50%;
 height: 460px;
@@ -323,8 +443,8 @@ height: 460px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 100%;
-padding: 15 10 15 10;
+width: 85%;
+padding: 15px;
 }
 
 p 
@@ -354,42 +474,60 @@ letter-spacing: 3px;
 
 .section 
 {
-margin: 0 150 0 150;
+margin: auto;
 padding: 20px;
 }
 
-.footer 
-    {
-    width: 100%;
-    height: 260px;
-    color: white;
-    background-color:rgb(126, 1, 1);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 20 65 200 65;
+
+
+  .footer 
+  {
+  width: 100%;
+  height: 260px;
+  color: white;
+  background-color:rgb(126, 1, 1);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20 65 200 65;
+  text-align: center;
+  }
+  address { 
+    display: block;
+    font-style: inherit;
     text-align: center;
-    }
-    address { 
-      display: block;
-      font-style: inherit;
-      text-align: center;
-      letter-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+    
+  a {
+      color: white;
+      text-decoration: none;
       line-height: 20px;
-    }
-  
-      
-    a {
-        color: white;
-        text-decoration: none;
-        line-height: 20px;
-    }
+  }
 
 }
 
+
+
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) 
-{
+@media screen and (max-width: 600px) {
+  
+  #menuToggle
+  {
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 20px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
   .column 
   {
   width: 100%;
@@ -403,8 +541,8 @@ padding: 20px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 100%;
-padding: 10 0 10 0;
+width: 90%;
+padding: 10px;
 }
 
 .content 
@@ -415,7 +553,7 @@ margin-bottom: 100px;
 
 .section 
 {
-margin: 0 0 0 0;
+margin: auto;
 padding: 20px;
 }
 
@@ -446,3 +584,22 @@ a {
     text-decoration: none;
     line-height: 20px;
 }
+
+  
+ 
+
+  /** {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+  
+
+ 
+  .footer-heading a-hover {
+    color: rgb(45, 4, 45);
+    transition: 0.3s ease-out;
+  }
+*/
+
