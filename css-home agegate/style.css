@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+html, body{
+  font-family: 'Gill Sans';
+  font-size: 20px;
+
+  font-weight: 100;
+  line-height: 1.4;
+
+}
+
+.container{
+  margin: auto;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 200 0 1000 0;
+  background-color: rgb(255, 255, 255);
+
+
+  
+}
+
+button{
+  background-color: #910000;
+  color: #fff;
+  text-decoration: none;
+  display:inline-block;
+  letter-spacing: 2px;
+  padding: 5 20;
+  margin: auto;
+  width: 150px;
+  
+  
+ 
+}
+/*----------------------------------------------   
+--Fluid body sizing
+-----------------------------------------------  */
+body {
+font-size: 100%;
+  
+  @media (min-width: 32em) {
+    font-size: 110%
+  }
+  @media (min-width: 54em) {
+    font-size: 111%
+  }
+  @media (min-width: 74em) {
+    font-size: 115%
+  }
+
+  @media (min-width: 96em) {
+    font-size: 135%
+  }
+}
+
+
+  
+
+}
+
+
+.box{
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 9;
+  width: 70%;
+  height: 40%;
+  display:table;
+  
+  .box {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 5%;
+    
+    @media (min-width: 54em){
+      display:table-cell;
+      vertical-align:middle;
+      width: 50%;
+    }
+    
+    p{
+      //padding: 5%;
+      position: relative;
+      z-index: 3;
+    }
+
+    
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+  
+  .box-right{
+    text-align: center;
+    
+    h3 {
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1em;
+      margin: 0 auto;
+    }
+    p{
+      color: rgb(255, 255, 255);
+    }
+    small{
+      color: #ccc;
+    }
+    .btn{
+      font-weight: 300;
+      letter-spacing: 2px;
+      padding: 1px;
+      margin: 1px auto;
+      display: block;
+    }
+  }
+}
+
+
+
+
+body 
+{
+  background-color:rgb(255, 255, 255);
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  align-content: center;
+}
+.wrapper {
+  padding: 32px;
+}
+.cookie-container {
+  position: fixed;
+  bottom: -100;
+  left: 0;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 0 32px;
+
+
+  transition: 400ms;
+}
+.cookie-container.active {
+  bottom: 0;
+}
+  .cookie-container a {
+      color: white;
+  }
+cookie-btn {
+  background: tomato;
+  border: 0;
+  color: white;
+  padding: 12 48;
+  font-size: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+
+
+}
